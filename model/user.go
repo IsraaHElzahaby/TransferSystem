@@ -1,7 +1,7 @@
 package model
 
 import (
-	"flashcards-api/app/database"
+	"TRANSFERSYSTEM/app/database"
 
 	"gorm.io/gorm"
 )
@@ -10,7 +10,7 @@ type User struct {
 	gorm.Model
 	ID string `gorm:"" json:"id"`
 	Name string `gorm:"" json:"name"`
-	Balance  string `gorm:"" json:"balance"`
+	Balance  float64 `gorm:"" json:"balance"`
 	Password string `gorm:"" json:"password"`
 }
 

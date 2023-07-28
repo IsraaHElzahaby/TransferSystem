@@ -1,8 +1,8 @@
 package auth
 
 import (
-	"flashcards-api/app/config"
-	"flashcards-api/model"
+	"TRANSFERSYSTEM/app/config"
+	"TRANSFERSYSTEM/model"
 
 	"github.com/golang-jwt/jwt"
 )

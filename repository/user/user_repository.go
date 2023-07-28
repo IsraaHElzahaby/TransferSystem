@@ -1,8 +1,8 @@
 package user
 
 import (
-	"flashcards-api/app/database"
-	"flashcards-api/model"
+	"TRANSFERSYSTEM/app/database"
+	"TRANSFERSYSTEM/model"
 	"fmt"
 )
 
@@ -17,8 +17,11 @@ func GetAll() []model.User {
 	return users
 }
 
-func (s *User) Create() {
-	database.DB.Create(&s)
+func FindById(id string) model.User {
+	var user model.User
+	database.DB.Where("ID = ?", id).Find(&user)
+
+	return user
 }
 
 func FindBy(whereConditions map[string]string) model.User {
@@ -31,4 +34,15 @@ func FindBy(whereConditions map[string]string) model.User {
 	database.DB.Find(&user)
 
 	return user
+}
+
+func UpdateBalance(id string, balance float64) model.User {
+	user := FindById(id)
+	database.DB.Model(&user).Where("ID = ?", id).Update("Balance", balance)
+
+	return user
+}
+
+func (s *User) Create() {
+	database.DB.Create(&s)
 }

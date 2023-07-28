@@ -1,7 +1,7 @@
 package security
 
 import (
-	"flashcards-api/app/config"
+	"TRANSFERSYSTEM/app/config"
 	"fmt"
 	"net/http"
 	"strings"

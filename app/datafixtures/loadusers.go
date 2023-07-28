@@ -8,8 +8,9 @@ import (
     "os"
 	"encoding/json"
 	"gorm.io/gorm"	
-	"flashcards-api/app/database"
+	"TRANSFERSYSTEM/app/database"
 	"golang.org/x/crypto/bcrypt"
+	"strconv"
 
 )
  
@@ -45,9 +46,9 @@ func LoadUsers() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		
-		userData.Password = string(hashedPassword)
 
+		userData.Password = string(hashedPassword)
+		strconv.ParseFloat(userData.Balance,32)
 		database.DB.Create(&userData)
 	}
 	fmt.Println("Users synced")
