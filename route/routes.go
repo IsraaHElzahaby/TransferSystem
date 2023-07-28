@@ -1,10 +1,10 @@
 package route
 
 import (
-	"flashcards-api/app/security"
-	userController "flashcards-api/controller/user"
-	creditController "flashcards-api/controller/credit"
-	authController "flashcards-api/controller/auth"
+	"TRANSFERSYSTEM/app/security"
+	userController "TRANSFERSYSTEM/controller/user"
+	creditController "TRANSFERSYSTEM/controller/credit"
+	authController "TRANSFERSYSTEM/controller/auth"
 	"github.com/go-chi/chi/v5"
 )
 

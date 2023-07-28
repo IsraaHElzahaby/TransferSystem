@@ -1,8 +1,8 @@
 package user
 
 import (
-	"flashcards-api/app/api"
-	userRepository "flashcards-api/repository/user"
+	"TRANSFERSYSTEM/app/api"
+	userRepository "TRANSFERSYSTEM/repository/user"
 	"net/http"
 )
 

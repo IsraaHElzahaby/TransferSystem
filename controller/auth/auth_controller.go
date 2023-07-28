@@ -2,9 +2,9 @@ package auth
 
 import (
 	"encoding/json"
-	"flashcards-api/app/api"
-	userRepository "flashcards-api/repository/user"
-	"flashcards-api/service/auth"
+	"TRANSFERSYSTEM/app/api"
+	userRepository "TRANSFERSYSTEM/repository/user"
+	"TRANSFERSYSTEM/service/auth"
 	"io/ioutil"
 	"net/http"
 

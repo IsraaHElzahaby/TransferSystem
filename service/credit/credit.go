@@ -1,19 +1,23 @@
 package credit
 
 import (
-	// "flashcards-api/app/config"
-	"flashcards-api/model"
+	// "TRANSFERSYSTEM/app/config"
+	// "TRANSFERSYSTEM/model"
+	// "encoding/json"
+	"TRANSFERSYSTEM/app/api"
+	userRepository "TRANSFERSYSTEM/repository/user"
+	"net/http"
 
-	// "github.com/golang-jwt/jwt"
 )
 
-func Transfer(user model.User) string {
+// func Transfer( string {
 	
-	//check transferer account and credit
-	//check deduct
-	//deposit
+// 	tranferer := userRepository.FindById(creditRequest.Transferer)
+	
+// 	if tranferer.ID == "0" {
+// 		api.Json(w).RespondError(api.ErrorRes{Error: "User not found", StatusCode: http.StatusNotFound})
+// 		return
+// 	}
 
-	// signedToken, _ := token.SignedString([]byte(config.Get("SECRET")))
-
-	return "D"
-}
+// 	return tranferer
+// }

@@ -1,4 +1,4 @@
-module flashcards-api
+module TRANSFERSYSTEM
 
 go 1.19
 
