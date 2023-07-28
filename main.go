@@ -1,7 +1,7 @@
 package main
  
 import (
-	// "TRANSFERSYSTEM/app/datafixtures"
+	"TRANSFERSYSTEM/app/datafixtures"
 	"TRANSFERSYSTEM/route"
     "log"
     "net/http"
