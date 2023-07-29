@@ -23,7 +23,7 @@ func RegisterRoutes() *chi.Mux {
 func handleAPI() {
 	// Auth
 	router.Post("/api/login", authController.Login)
-	// router.Post("/api/register", authController.Register)
+	router.Post("/api/register", authController.Register)
 
 	// Secured Routes
 	router.Route("/api", func(router chi.Router) {
@@ -31,6 +31,6 @@ func handleAPI() {
 
 		// user
 		router.Get("/user", userController.FindAll)
-		router.Post("/credit/tranfer", creditController.Transfer)
+		router.Post("/credit/transfer", creditController.Transfer)
 	})
 }
